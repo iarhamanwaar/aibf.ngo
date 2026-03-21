@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import { useLocale } from "@/lib/i18n";
 
 const navKeys = [
-  { href: "#about", key: "nav.about" },
-  { href: "#programs", key: "nav.programs" },
-  { href: "#impact", key: "nav.impact" },
-  { href: "#donate", key: "nav.donate" },
-  { href: "#contact", key: "nav.contact" },
+  { href: "/#about", key: "nav.about" },
+  { href: "/#programs", key: "nav.programs" },
+  { href: "/#impact", key: "nav.impact" },
+  { href: "/#donate", key: "nav.donate" },
+  { href: "/#contact", key: "nav.contact" },
 ];
 
 export default function Navbar() {
@@ -36,7 +36,7 @@ export default function Navbar() {
       <nav className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="#" className={`flex items-center gap-2 group flex-shrink-0 ${isRTL ? "flex-row-reverse" : ""}`}>
+          <a href="/" className={`flex items-center gap-2 group flex-shrink-0 ${isRTL ? "flex-row-reverse" : ""}`}>
             <img
               src="/logo-icon-white.png"
               alt="AIBF"
@@ -61,7 +61,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#donate"
+              href="/#donate"
               className="bg-gold hover:bg-gold-light text-emerald-deep px-5 py-2 text-sm font-semibold tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
             >
               {t("nav.donateNow")}
@@ -129,7 +129,7 @@ export default function Navbar() {
             ))}
             <div className="px-4 pt-2">
               <a
-                href="#donate"
+                href="/#donate"
                 onClick={() => setMenuOpen(false)}
                 className="block text-center bg-gold hover:bg-gold-light text-emerald-deep px-5 py-2.5 text-sm font-semibold tracking-wide transition-all"
               >
