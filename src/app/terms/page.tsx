@@ -279,10 +279,10 @@ export default function TermsAndConditions() {
                   <p>
                     Email:{" "}
                     <a
-                      href="mailto:arhamanwaar@gmail.com"
+                      href="mailto:contact@aibf.ngo"
                       className="text-emerald-deep hover:text-gold transition-colors"
                     >
-                      arhamanwaar@gmail.com
+                      contact@aibf.ngo
                     </a>
                   </p>
                   <p>

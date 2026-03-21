@@ -25,7 +25,7 @@ export default function StructuredData() {
       "@type": "ContactPoint",
       telephone: "+92-301-6701340",
       contactType: "customer service",
-      email: "arhamanwaar@gmail.com",
+      email: "contact@aibf.ngo",
     },
     sameAs: ["https://www.instagram.com/aibf_org"],
     areaServed: {
