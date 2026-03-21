@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { useLocale } from "@/lib/i18n";
 
 export default function Donate() {
   const { locale, t } = useLocale();
+  const [copied, setCopied] = useState(false);
   const isRTL = locale === "ur";
   const urduFont = isRTL ? "font-[family-name:var(--font-urdu)]" : "";
 
@@ -115,10 +117,25 @@ export default function Donate() {
             <button
               onClick={() => {
                 navigator.clipboard?.writeText("PK45FAYS3353499000006131");
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
               }}
-              className="mt-6 w-full bg-gold hover:bg-gold-light text-emerald-deep py-3 font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
+              className={`mt-6 w-full py-3 font-semibold text-sm tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2 ${
+                copied
+                  ? "bg-white text-emerald-deep"
+                  : "bg-gold hover:bg-gold-light text-emerald-deep hover:shadow-lg hover:shadow-gold/20"
+              }`}
             >
-              {t("donate.copyIban")}
+              {copied ? (
+                <>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                  </svg>
+                  {isRTL ? "کاپی ہو گیا!" : "Copied!"}
+                </>
+              ) : (
+                t("donate.copyIban")
+              )}
             </button>
           </div>
 
