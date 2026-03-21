@@ -175,6 +175,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "footer.copyright": "Al-Iftikhar Bugvia Foundation. All rights reserved.",
     "footer.projectOf": "A project of the ",
     "footer.bugviFamily": "Bugvi Family",
+    "footer.legal": "Legal",
+    "footer.link.privacy": "Privacy Policy",
+    "footer.link.terms": "Terms & Conditions",
+    "footer.link.refund": "Refund Policy",
+    "footer.link.services": "Our Services",
   },
   ur: {
     // Navbar
@@ -351,5 +356,10 @@ export const translations: Record<Locale, Record<string, string>> = {
       "الافتخار بگویا فاؤنڈیشن۔ جملہ حقوق محفوظ ہیں۔",
     "footer.projectOf": "",
     "footer.bugviFamily": "بگوی خاندان",
+    "footer.legal": "قانونی",
+    "footer.link.privacy": "رازداری کی پالیسی",
+    "footer.link.terms": "شرائط و ضوابط",
+    "footer.link.refund": "واپسی کی پالیسی",
+    "footer.link.services": "ہماری خدمات",
   },
 };

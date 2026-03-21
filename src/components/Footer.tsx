@@ -15,10 +15,17 @@ export default function Footer() {
     { href: "https://bugvi.org", key: "footer.link.bugvi" },
   ];
 
+  const legalLinks = [
+    { href: "/privacy", key: "footer.link.privacy" },
+    { href: "/terms", key: "footer.link.terms" },
+    { href: "/refund", key: "footer.link.refund" },
+    { href: "/services", key: "footer.link.services" },
+  ];
+
   return (
     <footer dir={isRTL ? "rtl" : "ltr"} className={`bg-charcoal py-16 ${urduFont}`}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className={isRTL ? "text-right" : "text-left"}>
             <div className={`flex items-center gap-3 mb-4 ${isRTL ? "flex-row-reverse justify-end" : ""}`}>
@@ -58,6 +65,24 @@ export default function Footer() {
             </h4>
             <div className="space-y-2">
               {quickLinks.map((link) => (
+                <a
+                  key={link.key}
+                  href={link.href}
+                  className="block text-white/40 hover:text-gold text-sm transition-colors"
+                >
+                  {t(link.key)}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Legal */}
+          <div className={isRTL ? "text-right" : "text-left"}>
+            <h4 className="text-white font-semibold text-sm tracking-wider uppercase mb-4">
+              {t("footer.legal")}
+            </h4>
+            <div className="space-y-2">
+              {legalLinks.map((link) => (
                 <a
                   key={link.key}
                   href={link.href}
