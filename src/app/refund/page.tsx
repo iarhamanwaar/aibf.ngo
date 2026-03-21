@@ -105,10 +105,10 @@ export default function RefundPolicy() {
                       <p className="text-sm mt-1">
                         Send an email to{" "}
                         <a
-                          href="mailto:bugvi4all@hotmail.com"
+                          href="mailto:info@aibf.ngo"
                           className="text-emerald-deep hover:text-gold transition-colors underline"
                         >
-                          bugvi4all@hotmail.com
+                          info@aibf.ngo
                         </a>{" "}
                         within seven (7) days of the transaction date.
                       </p>
@@ -198,10 +198,10 @@ export default function RefundPolicy() {
                   provider. If you have done so and still have not received your
                   refund, please contact us at{" "}
                   <a
-                    href="mailto:bugvi4all@hotmail.com"
+                    href="mailto:info@aibf.ngo"
                     className="text-emerald-deep hover:text-gold transition-colors underline"
                   >
-                    bugvi4all@hotmail.com
+                    info@aibf.ngo
                   </a>{" "}
                   and we will investigate the matter.
                 </p>
@@ -235,10 +235,10 @@ export default function RefundPolicy() {
                   <p>
                     Email:{" "}
                     <a
-                      href="mailto:bugvi4all@hotmail.com"
+                      href="mailto:info@aibf.ngo"
                       className="text-emerald-deep hover:text-gold transition-colors"
                     >
-                      bugvi4all@hotmail.com
+                      info@aibf.ngo
                     </a>
                   </p>
                   <p>
