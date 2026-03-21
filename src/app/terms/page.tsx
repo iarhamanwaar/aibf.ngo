@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export const metadata = {
-  title: "Terms & Conditions | Al-Iftikhar Bugvia Foundation",
+export const metadata: Metadata = {
+  title: "Terms & Conditions | AIBF",
   description:
     "Terms and conditions for using the Al-Iftikhar Bugvia Foundation (AIBF) website and making donations.",
+  alternates: {
+    canonical: "https://aibf.ngo/terms",
+  },
 };
 
 export default function TermsAndConditions() {

@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export const metadata = {
-  title: "Privacy Policy | Al-Iftikhar Bugvia Foundation",
+export const metadata: Metadata = {
+  title: "Privacy Policy | AIBF",
   description:
     "Privacy policy for the Al-Iftikhar Bugvia Foundation (AIBF) website, covering data collection, payment processing, and your rights.",
+  alternates: {
+    canonical: "https://aibf.ngo/privacy",
+  },
 };
 
 export default function PrivacyPolicy() {

@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export const metadata = {
-  title: "Refund Policy | Al-Iftikhar Bugvia Foundation",
+export const metadata: Metadata = {
+  title: "Refund Policy | AIBF",
   description:
     "Donation refund policy for the Al-Iftikhar Bugvia Foundation (AIBF), including eligibility, process, and timelines.",
+  alternates: {
+    canonical: "https://aibf.ngo/refund",
+  },
 };
 
 export default function RefundPolicy() {

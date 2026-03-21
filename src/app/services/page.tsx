@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Our Services | Al-Iftikhar Bugvia Foundation",
   description:
-    "Explore the programs and services of Al-Iftikhar Bugvia Foundation (AIBF) — from free medical camps and scholarships to relief programs and heritage preservation.",
+    "Explore AIBF programs: free medical camps, Sahaara relief, merit scholarships, Ramadan ration drives, marriage assistance, widow & orphan care, dispensary services, and heritage preservation.",
+  alternates: {
+    canonical: "https://aibf.ngo/services",
+  },
 };
 
 const services = [
