@@ -63,12 +63,8 @@ export default function Donate() {
             </h3>
 
             <div className="space-y-6">
-              {/* Bank Option 1 */}
+              {/* Bank Details */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-8">
-                <span className="inline-block text-gold text-xs tracking-[0.2em] uppercase font-semibold border border-gold/30 px-3 py-1 mb-5">
-                  {t("donate.bank1.option")}
-                </span>
-
                 <div className="space-y-4">
                   <div>
                     <label className="text-white/40 text-xs tracking-wider uppercase block mb-1">
@@ -100,56 +96,11 @@ export default function Donate() {
 
                 <button
                   onClick={() => {
-                    navigator.clipboard?.writeText("PK81MUCB0038901010010262");
+                    navigator.clipboard?.writeText("PK45FAYS3353499000006131");
                   }}
                   className="mt-4 w-full bg-gold hover:bg-gold-light text-emerald-deep py-2.5 font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
                 >
                   {t("donate.copyIban")}
-                </button>
-              </div>
-
-              {/* Bank Option 2 */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-8">
-                <span className="inline-block text-gold text-xs tracking-[0.2em] uppercase font-semibold border border-gold/30 px-3 py-1 mb-5">
-                  {t("donate.bank2.option")}
-                </span>
-
-                <div className="space-y-4">
-                  <div>
-                    <label className="text-white/40 text-xs tracking-wider uppercase block mb-1">
-                      {t("donate.bank2.label")}
-                    </label>
-                    <p className="text-white font-medium">
-                      {t("donate.bank2.value")}
-                    </p>
-                  </div>
-
-                  <div>
-                    <label className="text-white/40 text-xs tracking-wider uppercase block mb-1">
-                      {t("donate.account2.label")}
-                    </label>
-                    <p className="text-white font-medium">
-                      {t("donate.account2.value")}
-                    </p>
-                  </div>
-
-                  <div>
-                    <label className="text-white/40 text-xs tracking-wider uppercase block mb-1">
-                      {t("donate.iban2.label")}
-                    </label>
-                    <p className="text-gold font-mono text-lg tracking-wider" dir="ltr">
-                      {t("donate.iban2.value")}
-                    </p>
-                  </div>
-                </div>
-
-                <button
-                  onClick={() => {
-                    navigator.clipboard?.writeText("PK61ASCM0007290200003912");
-                  }}
-                  className="mt-4 w-full bg-gold hover:bg-gold-light text-emerald-deep py-2.5 font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
-                >
-                  {t("donate.copyIban2")}
                 </button>
               </div>
             </div>

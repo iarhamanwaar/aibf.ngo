@@ -301,10 +301,10 @@ export default function PrivacyPolicy() {
                   <p>
                     Email:{" "}
                     <a
-                      href="mailto:info@aibf.ngo"
+                      href="mailto:arhamanwaar@gmail.com"
                       className="text-emerald-deep hover:text-gold transition-colors"
                     >
-                      info@aibf.ngo
+                      arhamanwaar@gmail.com
                     </a>
                   </p>
                   <p>
