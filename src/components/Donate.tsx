@@ -15,8 +15,7 @@ export default function Donate() {
   ];
 
   return (
-    <section id="donate" dir={isRTL ? "rtl" : "ltr"} className={`relative py-24 lg:py-32 bg-emerald-deep grain ${urduFont}`}>
-      <div className="absolute inset-0 pattern-overlay-light" />
+    <section id="donate" dir={isRTL ? "rtl" : "ltr"} className={`relative py-24 lg:py-32 bg-emerald-deep ${urduFont}`}>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">

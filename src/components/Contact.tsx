@@ -67,7 +67,6 @@ export default function Contact() {
 
   return (
     <section id="contact" dir={isRTL ? "rtl" : "ltr"} className={`relative py-24 lg:py-32 bg-cream ${urduFont}`}>
-      <div className="absolute inset-0 pattern-overlay" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}

@@ -11,25 +11,16 @@ export default function Hero() {
     <section
       dir={isRTL ? "rtl" : "ltr"}
       className={`relative min-h-screen flex items-center justify-center overflow-hidden ${urduFont}`}
-      style={{ background: "linear-gradient(135deg, #0d3a2a 0%, #1a4a38 40%, #2d5a45 100%)" }}
     >
-      {/* Warm amber overlay for golden-hour feel */}
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 70% 20%, rgba(201, 168, 76, 0.15) 0%, transparent 60%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 30% 80%, rgba(201, 168, 76, 0.08) 0%, transparent 50%)" }} />
+      {/* Full-bleed background photo */}
+      <img
+        src="/images/hero-masjid.png"
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
-      {/* Background pattern */}
-      <div className="absolute inset-0 pattern-overlay-light" />
-
-      {/* Warm overlay tint */}
-      <div className="absolute inset-0 warm-overlay" />
-
-      {/* Bottom fade to cream */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-cream to-transparent" />
-
-      {/* Decorative geometric elements */}
-      <div className="absolute top-20 right-10 w-64 h-64 border border-gold/10 rotate-45 hidden lg:block" />
-      <div className="absolute top-32 right-22 w-48 h-48 border border-gold/5 rotate-45 hidden lg:block" />
-      <div className="absolute bottom-40 left-10 w-32 h-32 border border-gold/10 rotate-12 hidden lg:block" />
+      {/* Dark gradient overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-emerald-deep" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
@@ -38,7 +29,7 @@ export default function Hero() {
           <img
             src="/logo-icon-white.png"
             alt="AIBF Logo"
-            className="h-[120px] w-auto mx-auto object-contain"
+            className="h-[100px] w-auto mx-auto object-contain"
           />
         </div>
 

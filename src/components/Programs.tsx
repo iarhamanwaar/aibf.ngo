@@ -50,8 +50,7 @@ export default function Programs() {
   const urduFont = isRTL ? "font-[family-name:var(--font-urdu)]" : "";
 
   return (
-    <section id="programs" dir={isRTL ? "rtl" : "ltr"} className={`relative py-24 lg:py-32 bg-emerald-deep grain ${urduFont}`}>
-      <div className="absolute inset-0 pattern-overlay-light" />
+    <section id="programs" dir={isRTL ? "rtl" : "ltr"} className={`relative py-24 lg:py-32 bg-emerald-deep ${urduFont}`}>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}

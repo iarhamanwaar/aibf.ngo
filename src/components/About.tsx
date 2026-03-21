@@ -16,8 +16,6 @@ export default function About() {
 
   return (
     <section id="about" dir={isRTL ? "rtl" : "ltr"} className={`relative py-24 lg:py-32 bg-cream ${urduFont}`}>
-      <div className="absolute inset-0 pattern-overlay" />
-
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -32,6 +30,11 @@ export default function About() {
             <div className="w-1.5 h-1.5 rotate-45 bg-gold" />
             <div className="w-12 h-px bg-gold/40" />
           </div>
+        </div>
+
+        {/* Masjid photo */}
+        <div className="mb-16 overflow-hidden max-h-80">
+          <img src="/images/hero-masjid-2.png" alt="Sher Shah Suri Mosque" className="w-full h-80 object-cover" />
         </div>
 
         {/* Two-column layout */}

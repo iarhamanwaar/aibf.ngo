@@ -16,7 +16,6 @@ export default function Impact() {
 
   return (
     <section id="impact" dir={isRTL ? "rtl" : "ltr"} className={`relative py-24 lg:py-32 bg-cream overflow-hidden ${urduFont}`}>
-      <div className="absolute inset-0 pattern-overlay" />
 
       {/* Decorative circles */}
       <div className="absolute -top-32 -right-32 w-64 h-64 rounded-full border border-gold/10" />

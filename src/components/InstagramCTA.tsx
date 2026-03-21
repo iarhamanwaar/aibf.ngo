@@ -15,7 +15,6 @@ export default function InstagramCTA() {
     >
       {/* Warm radial glow */}
       <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.12) 0%, transparent 70%)" }} />
-      <div className="absolute inset-0 warm-overlay" />
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
         {/* Instagram icon */}
