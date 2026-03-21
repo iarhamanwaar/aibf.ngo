@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# aibf.ngo
 
-## Getting Started
+Official website of the Al-Iftikhar Bugvia Foundation — a registered nonprofit serving rural communities through education, healthcare, and social welfare in Pakistan since 1998.
 
-First, run the development server:
+## About AIBF
+
+Founded by Dr. Anwaar Ahmed Bugvi, the Al-Iftikhar Bugvia Foundation operates across Buggah Sharif, Khanna, Dhook, and surrounding villages in District Jhelum. Our programs include:
+
+- Free Medical Camps (general, ophthalmology, gynecology)
+- Sahaara Relief Program (direct support for vulnerable families)
+- Merit Scholarships & Educational Awards
+- Ramadan Ration Drives & Eid Support
+- Marriage Assistance for underprivileged families
+- Widow, Orphan & Elderly Care
+- Bugvia Foundation Dispensary
+- Heritage & Cultural Preservation
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) 16 (static export)
+- [Tailwind CSS](https://tailwindcss.com/) v4
+- [Cloudflare Pages](https://pages.cloudflare.com/) hosting
+- Bilingual English/Urdu with RTL support
+
+## Local Development
 
 ```bash
+git clone git@github.com:iarhamanwaar/aibf.ngo.git
+cd aibf.ngo
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+# Static output in ./out/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+Pushes to `main` automatically deploy to [aibf.ngo](https://aibf.ngo) via Cloudflare Pages.
 
-To learn more about Next.js, take a look at the following resources:
+## Donate
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Bank:** Faysal Bank, MBS Bhera (3353)
+- **Account Title:** Al Iftikhar Bugvia Foundation
+- **IBAN:** PK45 FAYS 3353 4990 0000 6131
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
+- Website: [aibf.ngo](https://aibf.ngo)
+- Email: contact@aibf.ngo
+- Phone: +92 301 6701340
+- Instagram: [@aibf_org](https://www.instagram.com/aibf_org/)
+- Address: Sher Shahi Jamia Masjid Bugvia, Bhera, Sargodha, Pakistan
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Related
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [bugvi.org](https://bugvi.org) — Bugvi Family website
+
+## License
+
+All content, images, and text are the property of the Al-Iftikhar Bugvia Foundation. All rights reserved.

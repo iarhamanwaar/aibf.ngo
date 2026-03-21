@@ -99,9 +99,9 @@ export default function RootLayout({
         <StructuredData />
         <ClientLayout>{children}</ClientLayout>
 
-        {/* TODO: Replace G-XXXXXXXXXX with your GA4 Measurement ID from https://analytics.google.com */}
+        {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-DTJCXBD4FP"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -109,7 +109,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'G-DTJCXBD4FP');
           `}
         </Script>
 
