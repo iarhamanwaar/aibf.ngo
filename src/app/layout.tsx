@@ -105,23 +105,17 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${playfair.variable} ${gulzar.variable} h-full antialiased`}
     >
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTJCXBD4FP" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-DTJCXBD4FP');`,
+          }}
+        />
+      </head>
       <body>
         <StructuredData />
         <ClientLayout>{children}</ClientLayout>
-
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-DTJCXBD4FP"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-DTJCXBD4FP');
-          `}
-        </Script>
 
         {/* Microsoft Clarity */}
         <Script id="microsoft-clarity" strategy="afterInteractive">
