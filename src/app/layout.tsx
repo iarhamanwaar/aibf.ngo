@@ -44,6 +44,16 @@ export const metadata: Metadata = {
     "social welfare",
     "Sargodha",
     "Jhelum",
+    "donate Pakistan",
+    "charity Pakistan",
+    "free medical camp Bhera",
+    "Sher Shah Suri Mosque",
+    "Bugvia Foundation",
+    "zakat",
+    "sadqa",
+    "ration drive Pakistan",
+    "NGO Sargodha",
+    "welfare Pakistan",
   ],
   alternates: {
     canonical: "https://aibf.ngo",
@@ -110,6 +120,18 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-DTJCXBD4FP');
+          `}
+        </Script>
+
+        {/* Microsoft Clarity */}
+        {/* TODO: Replace CLARITY_PROJECT_ID with your actual Clarity project ID from https://clarity.microsoft.com */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "CLARITY_PROJECT_ID");
           `}
         </Script>
 

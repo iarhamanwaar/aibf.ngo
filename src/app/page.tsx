@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import SEOContent from "@/components/SEOContent";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Programs from "@/components/Programs";
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <SEOContent />
       <main>
         <Hero />
         <About />

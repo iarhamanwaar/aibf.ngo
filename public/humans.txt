@@ -1,0 +1,12 @@
+/* TEAM */
+Organization: Al-Iftikhar Bugvia Foundation
+Founded: 1998
+Founder: Dr. Anwaar Ahmed Bugvi
+Location: Bhera, Sargodha, Pakistan
+Contact: contact@aibf.ngo
+Instagram: @aibf_org
+
+/* SITE */
+Built with: Next.js, Tailwind CSS
+Hosted on: Cloudflare Pages
+Languages: English, Urdu
