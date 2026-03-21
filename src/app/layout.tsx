@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/logo-full.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Al-Iftikhar Bugvia Foundation",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: "Al-Iftikhar Bugvia Foundation",
     description:
       "Serving rural communities through education, healthcare, and social welfare since 2008.",
-    images: ["/logo-full.png"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: [

@@ -116,6 +116,15 @@ export const translations: Record<Locale, Record<string, string>> = {
       "For international transfers or other payment methods, please ",
     "donate.intl.link": "contact us directly",
     "donate.copyIban": "Copy IBAN",
+    "donate.suggestTitle": "Choose Your Impact",
+    "donate.suggest1.amount": "Rs 250",
+    "donate.suggest1.label": "1 Iftar Meal",
+    "donate.suggest2.amount": "Rs 2,500",
+    "donate.suggest2.label": "10 Iftar Meals",
+    "donate.suggest3.amount": "Rs 5,000",
+    "donate.suggest3.label": "1 Ration Pack",
+    "donate.suggest4.amount": "Rs 25,000",
+    "donate.suggest4.label": "100 Iftar Meals",
 
     // Instagram CTA
     "instagram.heading": "Follow Our Journey",
@@ -182,12 +191,12 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.donateNow": "ابھی عطیہ دیں",
 
     // Hero
-    "hero.established": "1998 سے قائم",
+    "hero.established": "1998 سے خدمت میں",
     "hero.titleLine1": "الافتخار",
     "hero.titleLine2Accent": "بگوی",
     "hero.titleLine2Rest": "فاؤنڈیشن",
     "hero.subtitle":
-      "بھیرہ، بگاہ شریف اور ضلع جہلم کے دیہاتوں میں تعلیم، صحت اور سماجی بہبود کے ذریعے دیہی برادریوں کی خدمت۔",
+      "بھیرہ، بگا شریف اور ضلع جہلم کے دیہی علاقوں میں تعلیم، صحت اور سماجی بہبود کے ذریعے کمیونٹیز کی خدمت",
     "hero.cta.support": "ہمارے مقصد کی حمایت کریں",
     "hero.cta.learn": "مزید جانیں",
 
@@ -203,7 +212,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "about.p3":
       "ہمارا یقین ہے کہ ہر فرد بنیادی ضروریات تک رسائی اور عزت کی زندگی گزارنے کا مستحق ہے۔ ہمارا کام خدمت، ہمدردی اور برادری کی یکجہتی کے اسلامی اصولوں پر مبنی ہے۔",
     "about.quote":
-      "\u201Cحقیقی خدمت بڑے اشاروں میں نہیں بلکہ اپنے ارد گرد کے لوگوں کو بلند کرنے کے خاموش، مسلسل عزم میں ہے۔\u201D",
+      "\u201Cحقیقی خدمت بڑے اشاروں میں نہیں بلکہ اپنے اردگرد کے لوگوں کو اٹھانے کے خاموش، مسلسل عزم میں ہے۔\u201D",
     "about.quoteAuthor": "— ڈاکٹر انوار احمد بگوی، بانی",
     "about.value1.title": "تعلیم اور کردار سازی",
     "about.value1.desc":
@@ -260,7 +269,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "impact.stat4.label": "کمیونٹی اپ ڈیٹس",
     "impact.stat4.sub": "ہمارے انسٹاگرام @aibf_org پر",
     "impact.quote":
-      "ہمارا مشن سادہ ہے — ہماری برادریوں کے ہر خاندان تک تعلیم، صحت اور عزت پہنچانا۔ ہم انصار ہیں — مددگار — اور ہم ہر روز اس پکار کا جواب دیتے ہیں۔",
+      "ہمارا مشن سادہ ہے — اپنی کمیونٹیز کے ہر خاندان تک تعلیم، صحت اور عزت لانا۔ ہم انصار ہیں — مددگار — اور ہم ہر روز اس پکار کا جواب دیتے ہیں۔",
     "impact.quoteAttrib": "الافتخار بگویا فاؤنڈیشن",
 
     // Donate
@@ -287,6 +296,15 @@ export const translations: Record<Locale, Record<string, string>> = {
       "بین الاقوامی ٹرانسفرز یا ادائیگی کے دیگر طریقوں کے لیے، براہ کرم ",
     "donate.intl.link": "ہم سے براہ راست رابطہ کریں",
     "donate.copyIban": "آئی بی اے این کاپی کریں",
+    "donate.suggestTitle": "اپنا اثر منتخب کریں",
+    "donate.suggest1.amount": "250 روپے",
+    "donate.suggest1.label": "1 افطار کا کھانا",
+    "donate.suggest2.amount": "2,500 روپے",
+    "donate.suggest2.label": "10 افطار کے کھانے",
+    "donate.suggest3.amount": "5,000 روپے",
+    "donate.suggest3.label": "1 راشن پیک",
+    "donate.suggest4.amount": "25,000 روپے",
+    "donate.suggest4.label": "100 افطار کے کھانے",
 
     // Instagram CTA
     "instagram.heading": "ہمارے سفر کی پیروی کریں",
@@ -326,7 +344,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "footer.orgName": "الافتخار بگویا فاؤنڈیشن",
     "footer.servingSince": "2008 سے خدمت میں",
     "footer.desc":
-      "پاکستان میں دیہی برادریوں کے لیے تعلیم، صحت اور سماجی بہبود کے لیے وقف ایک غیر منافع بخش تنظیم۔",
+      "پاکستان کے دیہی علاقوں میں تعلیم، صحت اور سماجی بہبود کے لیے وقف ایک غیر منافع بخش تنظیم۔",
     "footer.quickLinks": "فوری لنکس",
     "footer.link.about": "ہمارے بارے میں",
     "footer.link.programs": "ہمارے پروگرامز",

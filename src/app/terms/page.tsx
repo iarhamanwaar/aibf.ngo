@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions | AIBF",
@@ -305,6 +306,7 @@ export default function TermsAndConditions() {
         </section>
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

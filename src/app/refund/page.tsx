@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Refund Policy | AIBF",
@@ -261,6 +262,7 @@ export default function RefundPolicy() {
         </section>
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

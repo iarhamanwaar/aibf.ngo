@@ -54,6 +54,28 @@ export default function Donate() {
                 </span>
               ))}
             </div>
+
+            {/* Donation Suggestions */}
+            <div className="mt-10">
+              <h3 className="text-gold font-[family-name:var(--font-playfair)] text-xl mb-4">
+                {t("donate.suggestTitle")}
+              </h3>
+              <div className="grid grid-cols-2 gap-3">
+                {[1, 2, 3, 4].map((n) => (
+                  <div
+                    key={n}
+                    className="border border-gold/30 bg-white/5 backdrop-blur-sm p-4 text-center hover:border-gold hover:bg-white/10 transition-all duration-200 cursor-pointer"
+                  >
+                    <p className="text-emerald-300 font-semibold text-lg leading-tight">
+                      {t(`donate.suggest${n}.amount`)}
+                    </p>
+                    <p className="text-white/50 text-xs mt-1">
+                      {t(`donate.suggest${n}.label`)}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Right -- Bank Details */}

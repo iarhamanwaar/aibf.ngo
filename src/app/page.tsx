@@ -8,6 +8,7 @@ import InstagramCTA from "@/components/InstagramCTA";
 import Donate from "@/components/Donate";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

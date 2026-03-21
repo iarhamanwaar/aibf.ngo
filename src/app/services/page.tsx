@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Our Services | Al-Iftikhar Bugvia Foundation",
@@ -171,6 +172,7 @@ export default function Services() {
         </section>
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

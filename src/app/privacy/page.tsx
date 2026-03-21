@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | AIBF",
@@ -327,6 +328,7 @@ export default function PrivacyPolicy() {
         </section>
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
