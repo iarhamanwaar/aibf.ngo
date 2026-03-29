@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Programs from "@/components/Programs";
 import Impact from "@/components/Impact";
+import FeaturedStories from "@/components/FeaturedStories";
 import InstagramCTA from "@/components/InstagramCTA";
 import Donate from "@/components/Donate";
 import Contact from "@/components/Contact";
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <Programs />
         <Impact />
+        <FeaturedStories />
         <InstagramCTA />
         <Donate />
         <Contact />

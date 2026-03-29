@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://aibf.ngo/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://aibf.ngo/services</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/donate</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://aibf.ngo/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/programs</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/gallery</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/burn-patient-bhalwal</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/fire-damaged-families-bhera</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/motorbike-qarz-hasna-bykea</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/wheelchair-disabled-khanna</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/thalassemia-children-blood</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/student-textbooks-exam</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/barber-shop-bugga</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/free-health-camp-maliyar</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/ramadan-ration-2026</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/qurbani-meat-200-bags</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/sewing-centers-women-empowerment</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/dispensary-bugga-917-patients</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/hernia-patient-diabetes</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/lahore-education-4-children</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/autoclave-thq-hospital</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/plantation-drive-2500-trees</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/flood-relief-muzaffargarh</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/english-course-bhera</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/dialysis-support-thq</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/stories/zakat-distribution-monthly</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://aibf.ngo/services</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://aibf.ngo/privacy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://aibf.ngo/terms</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://aibf.ngo/refund</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>

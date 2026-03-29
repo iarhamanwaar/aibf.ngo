@@ -8,18 +8,18 @@ export default function Footer() {
   const urduFont = isRTL ? "font-[family-name:var(--font-urdu)]" : "";
 
   const quickLinks = [
-    { href: "#about", key: "footer.link.about" },
-    { href: "#programs", key: "footer.link.programs" },
-    { href: "#donate", key: "footer.link.donate" },
-    { href: "#contact", key: "footer.link.contact" },
-    { href: "https://bugvi.org", key: "footer.link.bugvi" },
+    { href: "/about", key: "footer.link.about" },
+    { href: "/programs", key: "footer.link.programs" },
+    { href: "/stories", key: "footer.link.stories" },
+    { href: "/gallery", key: "footer.link.gallery" },
+    { href: "/donate", key: "footer.link.donate" },
+    { href: "/#contact", key: "footer.link.contact" },
   ];
 
   const legalLinks = [
     { href: "/privacy", key: "footer.link.privacy" },
     { href: "/terms", key: "footer.link.terms" },
     { href: "/refund", key: "footer.link.refund" },
-    { href: "/services", key: "footer.link.services" },
   ];
 
   return (
