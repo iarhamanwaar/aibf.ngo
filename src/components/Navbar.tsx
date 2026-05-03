@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { useLocale } from "@/lib/i18n";
 
 const navKeys = [
@@ -14,8 +15,18 @@ const navKeys = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const { locale, setLocale, t } = useLocale();
+  const { locale, t } = useLocale();
+  const pathname = usePathname() || "/";
   const isRTL = locale === "ur";
+
+  const onUr = pathname === "/ur" || pathname.startsWith("/ur/");
+  const prefix = (href: string) => {
+    if (href.startsWith("/#")) return href;
+    return onUr ? `/ur${href === "/" ? "" : href}` : href;
+  };
+  const toggleHref = onUr
+    ? pathname.replace(/^\/ur(\/|$)/, "/")
+    : `/ur${pathname === "/" ? "" : pathname}`;
   const urduFont = isRTL ? "font-[family-name:var(--font-urdu)]" : "";
 
   useEffect(() => {
@@ -36,7 +47,7 @@ export default function Navbar() {
       <nav className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="/" className={`flex items-center gap-2 group flex-shrink-0 ${isRTL ? "flex-row-reverse" : ""}`}>
+          <a href={onUr ? "/ur" : "/"} className={`flex items-center gap-2 group flex-shrink-0 ${isRTL ? "flex-row-reverse" : ""}`}>
             <img
               src="/logo-icon-white.png"
               alt="AIBF"
@@ -54,35 +65,37 @@ export default function Navbar() {
             {navKeys.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={prefix(link.href)}
                 className="text-white/80 hover:text-gold text-sm font-medium tracking-wide transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full"
               >
                 {t(link.key)}
               </a>
             ))}
             <a
-              href="/donate"
+              href={prefix("/donate")}
               className="bg-gold hover:bg-gold-light text-emerald-deep px-5 py-2 text-sm font-semibold tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
             >
               {t("nav.donateNow")}
             </a>
-            {/* Language Toggle */}
-            <button
-              onClick={() => setLocale(locale === "en" ? "ur" : "en")}
+            {/* Language Toggle (real link for SEO) */}
+            <a
+              href={toggleHref}
+              hrefLang={onUr ? "en" : "ur"}
               className="border border-white/20 hover:border-gold/50 text-white/80 hover:text-gold px-3 py-1.5 text-xs font-medium tracking-wide transition-all duration-300"
             >
-              {locale === "en" ? "اردو" : "EN"}
-            </button>
+              {onUr ? "EN" : "اردو"}
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 md:hidden">
-            <button
-              onClick={() => setLocale(locale === "en" ? "ur" : "en")}
+            <a
+              href={toggleHref}
+              hrefLang={onUr ? "en" : "ur"}
               className="border border-white/20 hover:border-gold/50 text-white/80 hover:text-gold px-2 py-1 text-xs font-medium transition-all duration-300"
             >
-              {locale === "en" ? "اردو" : "EN"}
-            </button>
+              {onUr ? "EN" : "اردو"}
+            </a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white p-2"
@@ -120,7 +133,7 @@ export default function Navbar() {
             {navKeys.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={prefix(link.href)}
                 onClick={() => setMenuOpen(false)}
                 className={`block py-3 px-4 text-white/80 hover:text-gold text-sm font-medium tracking-wide transition-colors ${isRTL ? "text-right" : "text-left"}`}
               >
@@ -129,7 +142,7 @@ export default function Navbar() {
             ))}
             <div className="px-4 pt-2">
               <a
-                href="/donate"
+                href={prefix("/donate")}
                 onClick={() => setMenuOpen(false)}
                 className="block text-center bg-gold hover:bg-gold-light text-emerald-deep px-5 py-2.5 text-sm font-semibold tracking-wide transition-all"
               >

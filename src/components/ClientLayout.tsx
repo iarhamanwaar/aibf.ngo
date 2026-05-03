@@ -2,6 +2,7 @@
 
 import { LocaleProvider, useLocale } from "@/lib/i18n";
 import { type ReactNode } from "react";
+import type { Locale } from "@/lib/translations";
 
 function LayoutInner({ children }: { children: ReactNode }) {
   const { locale } = useLocale();
@@ -18,9 +19,15 @@ function LayoutInner({ children }: { children: ReactNode }) {
   );
 }
 
-export default function ClientLayout({ children }: { children: ReactNode }) {
+export default function ClientLayout({
+  children,
+  locale = "en",
+}: {
+  children: ReactNode;
+  locale?: Locale;
+}) {
   return (
-    <LocaleProvider>
+    <LocaleProvider initialLocale={locale}>
       <LayoutInner>{children}</LayoutInner>
     </LocaleProvider>
   );

@@ -9,7 +9,14 @@ export const metadata: Metadata = {
   title: "Donate | Al-Iftikhar Bugvia Foundation",
   description:
     "Support AIBF's mission — donate via bank transfer or WhatsApp. Your contribution funds healthcare, education, ration drives, and livelihood programs for rural communities in Pakistan.",
-  alternates: { canonical: "https://aibf.ngo/donate" },
+  alternates: {
+    canonical: "https://aibf.ngo/donate",
+    languages: {
+      en: "https://aibf.ngo/donate",
+      ur: "https://aibf.ngo/ur/donate",
+      "x-default": "https://aibf.ngo/donate",
+    },
+  },
   openGraph: {
     title: "Donate to AIBF",
     description:
@@ -96,9 +103,9 @@ const acceptedTypes = [
 ];
 
 const photos = [
-  { src: "/images/programs/ration-bicycle.jpg", alt: "Ration delivery by bicycle to remote villages" },
-  { src: "/images/programs/team-with-ration.jpg", alt: "AIBF team preparing ration distribution" },
-  { src: "/images/programs/ration-rural-delivery.jpg", alt: "Ration delivery to rural families" },
+  { src: "/images/programs/ration-bicycle.webp", alt: "Ration delivery by bicycle to remote villages" },
+  { src: "/images/programs/team-with-ration.webp", alt: "AIBF team preparing ration distribution" },
+  { src: "/images/programs/ration-rural-delivery.webp", alt: "Ration delivery to rural families" },
 ];
 
 export default function DonatePage() {
@@ -172,7 +179,7 @@ export default function DonatePage() {
               <div className="flex flex-col sm:flex-row items-center gap-6">
                 <div className="relative w-28 h-36 flex-shrink-0 border border-charcoal/10 shadow-sm overflow-hidden bg-white">
                   <Image
-                    src="/images/certificates/pcc-registration.jpg"
+                    src="/images/certificates/pcc-registration.webp"
                     alt="Punjab Charity Commission Registration Certificate"
                     fill
                     className="object-cover"

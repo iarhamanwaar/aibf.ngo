@@ -7,8 +7,15 @@ import { teamMembers, timeline, impactStats } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About Us | Al-Iftikhar Bugvia Foundation",
   description:
-    "Learn about AIBF — a Punjab Charity Commission registered Category (A) charity serving rural Pakistan since 2008. Meet our team, see our timeline, and verify our credentials.",
-  alternates: { canonical: "https://aibf.ngo/about" },
+    "Learn about AIBF — a Punjab Charity Commission registered Category (A) charity serving rural Pakistan since 1998. Meet our team, see our timeline, and verify our credentials.",
+  alternates: {
+    canonical: "https://aibf.ngo/about",
+    languages: {
+      en: "https://aibf.ngo/about",
+      ur: "https://aibf.ngo/ur/about",
+      "x-default": "https://aibf.ngo/about",
+    },
+  },
 };
 
 const categoryColors: Record<string, string> = {
@@ -53,8 +60,8 @@ export default function AboutPage() {
     url: "https://aibf.ngo",
     logo: "https://aibf.ngo/logo-full.png",
     description:
-      "A Punjab Charity Commission registered Category (A) charity serving rural Pakistan through healthcare, education, and social welfare since 2008.",
-    foundingDate: "2008",
+      "A Punjab Charity Commission registered Category (A) charity serving rural Pakistan through healthcare, education, and social welfare since 1998.",
+    foundingDate: "1998",
     founder: {
       "@type": "Person",
       name: "Dr. Anwaar Ahmed Bugvi",
@@ -76,9 +83,8 @@ export default function AboutPage() {
     sameAs: ["https://www.instagram.com/aibf_org"],
     areaServed: {
       "@type": "Place",
-      name: "Bhera, Buggah Sharif, District Jhelum, Pakistan",
+      name: "Bhera, Buggah Sharif, District Sargodha, Pakistan",
     },
-    nonprofitStatus: "Nonprofit501c3",
     taxID: "PB-6976792864708031",
   };
 
@@ -112,7 +118,7 @@ export default function AboutPage() {
               </p>
               <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                 Serving Islam &amp; Humanity{" "}
-                <span className="text-gold">Since 2008</span>
+                <span className="text-gold">Since 1998</span>
               </h1>
               <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
                 A registered Category (A) Charity under Punjab Charity Commission,
@@ -278,7 +284,7 @@ export default function AboutPage() {
                   <div className="relative">
                     <div className="border border-cream-dark p-2 bg-cream">
                       <img
-                        src="/images/certificates/pcc-registration.jpg"
+                        src="/images/certificates/pcc-registration.webp"
                         alt="Punjab Charity Commission Registration Certificate — Al-Iftikhar Bugvia Foundation"
                         className="w-full h-auto"
                         loading="lazy"

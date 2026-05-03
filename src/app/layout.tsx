@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aibf.ngo"),
   title: "Al-Iftikhar Bugvia Foundation | Serving Islam & Humanity",
   description:
-    "Al-Iftikhar Bugvia Foundation (AIBF) — a nonprofit serving rural communities through education, healthcare, and social welfare in Bhera, Buggah Sharif, and surrounding areas since 2008.",
+    "Al-Iftikhar Bugvia Foundation (AIBF) — a nonprofit serving rural communities through education, healthcare, and social welfare in Bhera, Buggah Sharif, and surrounding areas since 1998.",
   keywords: [
     "Al-Iftikhar Bugvia Foundation",
     "AIBF",
@@ -57,6 +57,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://aibf.ngo",
+    languages: {
+      en: "https://aibf.ngo/",
+      ur: "https://aibf.ngo/ur",
+      "x-default": "https://aibf.ngo/",
+    },
   },
   robots: {
     index: true,
@@ -65,7 +70,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Al-Iftikhar Bugvia Foundation",
     description:
-      "Serving rural communities through education, healthcare, and social welfare since 2008.",
+      "Serving rural communities through education, healthcare, and social welfare since 1998.",
     url: "https://aibf.ngo",
     siteName: "Al-Iftikhar Bugvia Foundation",
     type: "website",
@@ -83,7 +88,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Al-Iftikhar Bugvia Foundation",
     description:
-      "Serving rural communities through education, healthcare, and social welfare since 2008.",
+      "Serving rural communities through education, healthcare, and social welfare since 1998.",
     images: ["/og-image.png"],
   },
   icons: {

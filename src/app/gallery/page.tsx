@@ -10,6 +10,11 @@ export const metadata: Metadata = {
     "Photos documenting AIBF's work — ration drives, health camps, sewing centers, heritage preservation, and community events across rural Pakistan.",
   alternates: {
     canonical: "https://aibf.ngo/gallery",
+    languages: {
+      en: "https://aibf.ngo/gallery",
+      ur: "https://aibf.ngo/ur/gallery",
+      "x-default": "https://aibf.ngo/gallery",
+    },
   },
 };
 

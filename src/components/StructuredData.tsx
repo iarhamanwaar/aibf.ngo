@@ -7,8 +7,8 @@ export default function StructuredData() {
     url: "https://aibf.ngo",
     logo: "https://aibf.ngo/logo-full.png",
     description:
-      "A nonprofit serving rural communities through education, healthcare, and social welfare in Bhera, Buggah Sharif, and surrounding areas since 2008.",
-    foundingDate: "2008",
+      "A nonprofit serving rural communities through education, healthcare, and social welfare in Bhera, Buggah Sharif, and surrounding areas since 1998.",
+    foundingDate: "1998",
     founder: {
       "@type": "Person",
       name: "Dr. Anwaar Ahmed Bugvi",
@@ -30,9 +30,8 @@ export default function StructuredData() {
     sameAs: ["https://www.instagram.com/aibf_org"],
     areaServed: {
       "@type": "Place",
-      name: "Bhera, Buggah Sharif, District Jhelum, Pakistan",
+      name: "Bhera, Buggah Sharif, District Sargodha, Pakistan",
     },
-    nonprofitStatus: "Nonprofit501c3",
   };
 
   return (

@@ -107,10 +107,13 @@ export default function StoryContent({
             </span>
           </nav>
 
-          {/* Category Badge */}
-          <span className="inline-block px-3 py-1 text-xs font-medium tracking-wide uppercase rounded-sm bg-white/10 text-white/80 backdrop-blur-sm mb-6">
+          {/* Category Badge (linked) */}
+          <Link
+            href={`/stories/category/${story.category}`}
+            className="inline-block px-3 py-1 text-xs font-medium tracking-wide uppercase rounded-sm bg-white/10 text-white/80 backdrop-blur-sm mb-6 hover:bg-gold/20 hover:text-gold transition-colors"
+          >
             {categoryLabel}
-          </span>
+          </Link>
 
           {/* Title */}
           <h1
@@ -337,6 +340,29 @@ export default function StoryContent({
               ))}
             </div>
           )}
+
+          {/* See all in category */}
+          <div className="mt-8 pt-6 border-t border-cream-dark">
+            <Link
+              href={`/stories/category/${story.category}`}
+              className="inline-flex items-center gap-2 text-emerald-deep font-medium hover:gap-3 transition-all text-sm"
+            >
+              {isUr ? "اس زمرے کی تمام کہانیاں" : `See all ${categoryLabel} stories`}
+              <svg
+                className={`w-4 h-4 ${isUr ? "rotate-180" : ""}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 

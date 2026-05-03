@@ -34,7 +34,7 @@ export default function About() {
 
         {/* Masjid photo */}
         <div className="mb-16 overflow-hidden max-h-80">
-          <img src="/images/hero-masjid-2.png" alt="Sher Shah Suri Mosque" className="w-full h-80 object-cover" />
+          <img src="/images/hero-masjid-2.webp" alt="Sher Shah Suri Mosque" className="w-full h-80 object-cover" />
         </div>
 
         {/* Two-column layout */}

@@ -27,7 +27,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "about.headingStart": "Rooted in ",
     "about.headingAccent": "Service",
     "about.p1":
-      "Founded in 2008 by Dr. Anwaar Ahmed Bugvi, the Al-Iftikhar Bugvia Foundation was born from a deep commitment to uplifting the rural ancestral communities of the Bugvi family.",
+      "Founded in 1998 by Dr. Anwaar Ahmed Bugvi, the Al-Iftikhar Bugvia Foundation was born from a deep commitment to uplifting the rural ancestral communities of the Bugvi family.",
     "about.p1.founder": "Dr. Anwaar Ahmed Bugvi",
     "about.p2":
       "Operating across Buggah Sharif, Khanna, Dhook, and surrounding villages in District Jhelum, AIBF addresses the most fundamental needs of underserved communities — from clean water and education to healthcare and social support.",

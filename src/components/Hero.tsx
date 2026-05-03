@@ -14,7 +14,7 @@ export default function Hero() {
     >
       {/* Full-bleed background photo */}
       <img
-        src="/images/hero-masjid.png"
+        src="/images/hero-masjid.webp"
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
       />

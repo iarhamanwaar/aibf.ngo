@@ -1,9 +1,16 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useLocale } from "@/lib/i18n";
 
 export default function Footer() {
   const { locale, t } = useLocale();
+  const pathname = usePathname() || "/";
+  const onUr = pathname === "/ur" || pathname.startsWith("/ur/");
+  const prefix = (href: string) => {
+    if (href.startsWith("/#")) return href;
+    return onUr ? `/ur${href === "/" ? "" : href}` : href;
+  };
   const isRTL = locale === "ur";
   const urduFont = isRTL ? "font-[family-name:var(--font-urdu)]" : "";
 
@@ -12,6 +19,9 @@ export default function Footer() {
     { href: "/programs", key: "footer.link.programs" },
     { href: "/stories", key: "footer.link.stories" },
     { href: "/gallery", key: "footer.link.gallery" },
+    { href: "/team", label: isRTL ? "ٹیم" : "Team" },
+    { href: "/financials", label: isRTL ? "مالیات" : "Financials" },
+    { href: "/annual-report", label: isRTL ? "سالانہ رپورٹ" : "Annual Report" },
     { href: "/donate", key: "footer.link.donate" },
     { href: "/#contact", key: "footer.link.contact" },
   ];
@@ -66,11 +76,11 @@ export default function Footer() {
             <div className="space-y-2">
               {quickLinks.map((link) => (
                 <a
-                  key={link.key}
-                  href={link.href}
+                  key={link.href}
+                  href={prefix(link.href)}
                   className="block text-white/40 hover:text-gold text-sm transition-colors"
                 >
-                  {t(link.key)}
+                  {link.key ? t(link.key) : link.label}
                 </a>
               ))}
             </div>
@@ -85,7 +95,7 @@ export default function Footer() {
               {legalLinks.map((link) => (
                 <a
                   key={link.key}
-                  href={link.href}
+                  href={prefix(link.href)}
                   className="block text-white/40 hover:text-gold text-sm transition-colors"
                 >
                   {t(link.key)}

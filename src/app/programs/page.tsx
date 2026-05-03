@@ -10,7 +10,14 @@ export const metadata: Metadata = {
   title: "Our Programs | Al-Iftikhar Bugvia Foundation",
   description:
     "Explore AIBF's 8 active programs: healthcare, ration drives, education, livelihood support, emergency relief, social welfare, heritage preservation, and green plantation.",
-  alternates: { canonical: "https://aibf.ngo/programs" },
+  alternates: {
+    canonical: "https://aibf.ngo/programs",
+    languages: {
+      en: "https://aibf.ngo/programs",
+      ur: "https://aibf.ngo/ur/programs",
+      "x-default": "https://aibf.ngo/programs",
+    },
+  },
 };
 
 function getCaseStudy(slug: string) {

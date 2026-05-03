@@ -30,7 +30,14 @@ export async function generateMetadata({
   return {
     title: `${story.title} | AIBF Stories of Impact`,
     description: story.summary,
-    alternates: { canonical: `https://aibf.ngo/stories/${story.slug}` },
+    alternates: {
+      canonical: `https://aibf.ngo/stories/${story.slug}`,
+      languages: {
+        en: `https://aibf.ngo/stories/${story.slug}`,
+        ur: `https://aibf.ngo/ur/stories/${story.slug}`,
+        "x-default": `https://aibf.ngo/stories/${story.slug}`,
+      },
+    },
     openGraph: {
       title: story.title,
       description: story.summary,
@@ -69,16 +76,21 @@ export default async function StoryPage({
     .slice(0, 3);
 
   // Structured data
-  const jsonLd = {
+  const validImages = story.images.filter((img) => !img.endsWith(".svg"));
+  const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: story.title,
+    inLanguage: "en",
     datePublished: story.date,
+    dateModified: story.date,
     description: story.summary,
+    articleSection: story.category,
+    keywords: story.tags?.join(", "),
     image:
-      story.images.length > 0 && !story.images[0].endsWith(".svg")
-        ? `https://aibf.ngo${story.images[0]}`
-        : "https://aibf.ngo/og-image.png",
+      validImages.length > 0
+        ? validImages.map((img) => `https://aibf.ngo${img}`)
+        : ["https://aibf.ngo/og-image.png"],
     author: {
       "@type": "Organization",
       name: "Al-Iftikhar Bugvia Foundation",
@@ -97,6 +109,20 @@ export default async function StoryPage({
       "@type": "WebPage",
       "@id": `https://aibf.ngo/stories/${story.slug}`,
     },
+    contentLocation: {
+      "@type": "Place",
+      name: story.location,
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://aibf.ngo" },
+      { "@type": "ListItem", position: 2, name: "Stories", item: "https://aibf.ngo/stories" },
+      { "@type": "ListItem", position: 3, name: story.title, item: `https://aibf.ngo/stories/${story.slug}` },
+    ],
   };
 
   return (
@@ -105,7 +131,11 @@ export default async function StoryPage({
       <main>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         <StoryContent story={story} relatedStories={relatedStories} />
       </main>
