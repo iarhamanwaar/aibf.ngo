@@ -80,7 +80,10 @@ export default function AboutPage() {
       contactType: "customer service",
       email: "contact@aibf.ngo",
     },
-    sameAs: ["https://www.instagram.com/aibf_org"],
+    sameAs: [
+      "https://www.instagram.com/aibf_org",
+      "https://www.wikidata.org/wiki/Q139622033",
+    ],
     areaServed: {
       "@type": "Place",
       name: "Bhera, Buggah Sharif, District Sargodha, Pakistan",
